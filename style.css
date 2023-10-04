@@ -1,0 +1,102 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    font-family: "roboto", sans-serif;
+    min-height: 100vh;  
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.header{
+    display: flex;
+    justify-content: center;   
+    background-color: #1F2937;
+    color: white;
+    padding: 32px;
+    font-size: 40px;
+}
+
+.footer{
+    background-color: rgb(70, 115, 182);
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+    color: white;   
+
+}
+
+.mid{
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    background-color: #e1eeff;  
+    flex-direction: column;
+}
+
+.calcBody{
+    width: 330px;
+    height: 450px;
+    background-color: rgb(192, 192, 192);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.buttonsArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    gap: 15px;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 300px;
+    height: 350px;
+}
+
+.buttons{
+    width: 55px;
+    height: 42px; 
+    background-color: white;
+    border: 2px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40%;
+    cursor: pointer;
+}
+
+.screen{
+    width: 300px;
+    height: 80px;
+    background-color: white;
+    border: 1px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#screenUpper, #screenDown{
+    background-color: rgb(134, 202, 134);
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 28px;
+}
+
+#screenUpper{
+    background-color: rgb(86, 184, 86);
+}
+
+
