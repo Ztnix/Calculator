@@ -40,13 +40,35 @@ PH.addEventListener("click",()=> start("Eh perro, no me piques, te woa dar un er
 b0.addEventListener("click",()=> start("0"));
 bPeriod.addEventListener("click",()=> period("."));
 
+document.addEventListener("keydown", (e)=>keyPresses(e))
+
 let firstNumber = "";
 let secondNumber = "";
 let signUsed = "";
 let result = 0;
 let periodCont = 0;
 
-
+let keyPresses = function(e){
+    let keyCode = e.keyCode;
+    if (keyCode >= 96 && keyCode <= 105) {
+        const numericValue = keyCode - 96;
+        start(numericValue)
+    }
+    
+    else if (keyCode === 13 || keyCode === 107 || keyCode === 109 || keyCode === 106) {
+        let signValue;
+        if (keyCode === 13) {
+            calculate()
+        } else if (keyCode === 107) {
+            signValue = '+';
+        } else if (keyCode === 109) {
+            signValue = '-';
+        } else if (keyCode === 106) {
+            signValue = '*';
+        }
+        sign(signValue);
+    }
+}
 
 let start = function(a){
     if (firstNumber.length>=19) return
